@@ -1,0 +1,75 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: comic;
+  src: url(../media/Hey-Comic.otf);
+}
+
+.App {
+  background: black;
+}
+
+.marvel-header {
+  font-family: comic;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+i {
+  color: white;
+}
+
+.marvel-nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(#ca0000));
+  background: linear-gradient(red, #ca0000);
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.marvel-hero {
+  background: url(../media/441312.jpg) center center;
+  background-size: cover;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hero-header {
+  font-family: comic;
+  color: white;
+  z-index: 2;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.644);
+  height: 400px;
+  width: 100%;
+  position: absolute;
+}
+/*# sourceMappingURL=App.css.map */

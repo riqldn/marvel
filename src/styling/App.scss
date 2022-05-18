@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@font-face {
+    font-family: comic;
+    src: url(../media/Hey-Comic.otf);
+}
+.App{
+    background: rgb(0, 0, 0);
+}
+.marvel-header{
+    font-family: comic;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+i{
+    color: white;
+}
+.marvel-nav{
+    background: linear-gradient(red,rgb(202, 0, 0));
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+
+}
+.marvel-hero{
+    background: url(../media/441312.jpg) center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.hero-header{
+    font-family: comic;
+    color: rgb(255, 255, 255);
+     z-index: 2;
+
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.644);
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    
+}
