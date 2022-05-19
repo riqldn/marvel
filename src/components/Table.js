@@ -27,8 +27,11 @@ const Table = ({ characters, search, setSearchText, totalChars, postsPerPage, se
         </>)
     };
     //function to update character list on search
-    const updateSearchText = (e) => {
-        setSearchText(e.target.value)
+    const updateSearchText = () => {
+        const searching = document.querySelector('.search')
+        setSearchText(searching.value)
+        searching.value = search
+     
     }
     const characterCards = characters.map((x, i) => {
         return (
@@ -42,8 +45,8 @@ const Table = ({ characters, search, setSearchText, totalChars, postsPerPage, se
             <div className='table'>
                 <nav className='table-nav'>
                     <form>
-                        <input className="" type="search" placeholder="Search" value={search} onChange={updateSearchText} aria-label="Search" />
-
+                        <input className="search" type="search" placeholder="Search" aria-label="Search" />
+                        <button className='search-button' onClick={updateSearchText}>Search</button>
                     </form>
                 </nav>
                 <div className="character-container">
